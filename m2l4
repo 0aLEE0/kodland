@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Informazioni utili!</title>
+        <link rel="stylesheet" href="stile.css">
+        
+    </head>
+    
+    <body>
+        <h1>Dipendenza da social network</h1>
+        <p>I social media riducono il tempo che trascorriamo nel mondo reale. Inoltre, condizionano la nostra mente a continui aggiornamenti di notizie e post, che a lungo andare possono diventare stressanti.</p>
+        <img src="https://media3.giphy.com/media/26BGGxgsEh42ABHFe/giphy.gif?cid=ecf05e47fewnmm2h6vijgpd1768vz8zxo441mpec89684gtw&rid=giphy.gif&ct=g" alt="Image 1">
+        <h2>Come possiamo resistere?</h2>
+        <ul>
+            <li>Possiamo stabilire dei limiti al tempo trascorso online/sui nostri dispositivi.</li>
+            <li>Possiamo programmare un tempo libero dalla tecnologia per rilassarci e riposare.</li>
+        </ul>
+
+        
+        <iframe src="https://www.meteoblue.com/it/tempo/widget/daily/ip_romania_675514?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&humidity=1&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 216px; height: 420px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/it/tempo/settimana/ip_romania_675514?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+
+   
+
+    </body>
+</html>
