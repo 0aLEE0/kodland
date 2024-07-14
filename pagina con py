@@ -1,0 +1,32 @@
+from flask import Flask
+import random
+
+app = Flask(__name__)
+
+@app.route("/fatto casuale")
+def fatto_casuale():
+    lista_fatti = [
+        "Secondo uno studio condotto nel 2018, più del 50% delle persone di età compresa tra i 18 e i 34 anni si considera dipendente dal proprio smartphone",
+        "Lo studio della dipendenza tecnologica è una delle aree più rilevanti della ricerca scientifica moderna",
+        "Secondo uno studio del 2019, oltre il 60% delle persone risponde ai messaggi di lavoro sul proprio smartphone entro 15 minuti dall'uscita dal lavoro",
+        "Un modo per combattere la dipendenza tecnologica è cercare attività che portino piacere e migliorino l'umore",
+        "I social network hanno aspetti positivi e negativi e dobbiamo essere consapevoli di entrambi quando usiamo queste piattaforme"
+    ]
+    return f'<p>{random.choice(lista_fatti)}</p>'
+
+@app.route("/")
+def index():
+    return '''
+        <h1>Ciao! In questa pagina puoi scoprire un paio di fatti interessanti sulle dipendenze tecnologiche!</h1>
+        <a href="/fatto casuale">Vedi un fatto casuale!</a>
+        <br>
+        <a href="/lancio-moneta">Lancia una moneta!</a>
+    '''
+
+@app.route("/lancio-moneta")
+def lancio_moneta():
+    risultato = "Testa" if random.choice([True, False]) else "Croce"
+    return f'<p>Il risultato del lancio della moneta è: {risultato}</p>'
+
+if __name__ == "__main__":
+    app.run(debug=True)
