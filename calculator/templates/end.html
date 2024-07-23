@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../static/css/style.css"> 
+  <title>Calcolo dell'efficienza energetica di una casa intelligente</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Calcola l'efficienza energetica della tua casa!</h1>
+      <p>Risolvi tu stesso il problema del consumo energetico eccessivo!</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title main__title--margin">Efficienza energetica della tua casa:</h2>
+    <div class="main__rez" id="end">
+        {%if result <= 150%}
+        <img class="rez__img" src="../../static/img/planet_good.svg" alt="">
+        <span>Il tuo risultato {{result}} кВт⋅ч</span>
+        <span>La tua casa ha un’eccellente efficienza energetica!</span>
+        {%elif result >= 151 and result < 300%}
+        <img class="rez__img" src="../../static/img/planet_medium.svg" alt="">
+        <span>Il tuo risultato {{result}} кВт⋅ч</span>
+        <span>La tua casa ha un’efficienza energetica media!</span>
+        {%elif result >= 300%}
+        <img class="rez__img" src="../../static/img/planet_bad.svg" alt="">
+        <span>Il tuo risultato {{result}} кВт⋅ч</span>
+        <span>La tua casa ha una scarsa efficienza energetica!</span>
+        {%endif%}
+    </div>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
